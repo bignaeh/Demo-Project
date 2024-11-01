@@ -20,7 +20,7 @@ function LoginScreen({navigation,value,onChangeText}) {
         {/* main screen */}
         <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.MotherView}>
-              <Image source={require('../../assets/Flatpay.png')} style={styles.LogoView}/>
+              <Image source={require('../../../../assets/Flatpay.png')} style={styles.LogoView}/>
               <Text style={styles.LoginText}>Login</Text>
               <Text style={styles.WelcomeText}>Welcome back to the app</Text>
 
@@ -72,7 +72,7 @@ function LoginScreen({navigation,value,onChangeText}) {
                 <Text style={{fontFamily:'gilroy-regular',alignSelf:'center',fontSize:15,color:'white', marginTop:25}}>or sign in with</Text>
 
                 <View style={styles.GoogleLogo}>
-                <Image source={require('../../assets/LogoGoogle.png')} style={styles.GoogleView}/>
+                <Image source={require('../../../../assets/LogoGoogle.png')} style={styles.GoogleView}/>
                 <TouchableOpacity onPress={() => navigation.navigate ()}>
                 <Text style={styles.GoogleText}>Continue with Google</Text>
                 </TouchableOpacity>

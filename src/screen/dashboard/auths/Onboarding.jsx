@@ -6,7 +6,7 @@ function Onboarding ({navigation}) {
     <SafeAreaView style={styles.Main}>
         <View style={styles.MotherView}>
             <View style={styles.LogoTextView}>
-            <Image source={require('../../assets/Flatpay.png')} style={styles.LogoView}/>
+            <Image source={require('../../../../assets/Flatpay.png')} style={styles.LogoView}/>
             <Text allowFontScaling={false} style={styles.FlatpayText}>Flatpay</Text>
             </View>
         </View>

@@ -2,18 +2,19 @@ import { StyleSheet, Text, View, SafeAreaView, Systrace } from 'react-native';
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import React, { useEffect, useState, useCallback } from 'react';
-import Onboarding from './src/screen/Onboarding';
+import Onboarding from './src/screen/dashboard/auths/Onboarding';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import LoginScreen from './src/screen/LoginScreen';
-import Dashboard from './src/screen/Dashboard';
-import Airtime from './src/screen/Airtime';
-import ConfirmAirtime from './src/screen/ConfirmAirtime';
+import LoginScreen from './src/screen/dashboard/auths/LoginScreen';
+import Airtime from './src/screen/utility-payments/airtime-bill/Airtime';
+import ConfirmAirtime from './src/screen/utility-payments/airtime-bill/ConfirmAirtime';
 import Reward from './src/screen/Reward';
 import { Feather, AntDesign,Ionicons,MaterialIcons } from '@expo/vector-icons';
-import Data from './src/screen/Data';
+import Data from './src/screen/utility-payments/data-bill/Data';
 import Me from './src/screen/Me';
+import Dashboard from './src/screen/dashboard/Dashboard';
+import Paymentbox2 from './src/screen/dashboard/Paymentbox2';
 
 
 

@@ -48,7 +48,7 @@ function ConfirmAirtime({ navigation,amount, selectedNumber, onClose }) {
                         <Text style={styles.DescriptionText}>Network:</Text>
 
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-                            <Image source={require('../../assets/MTN.png')} style={{ width: 22, height: 22, borderRadius: 10, marginTop: 15, marginRight: 4 }} />
+                            <Image source={require('../../../../assets/MTN.png')} style={{ width: 22, height: 22, borderRadius: 10, marginTop: 15, marginRight: 4 }} />
                             <Text style={styles.AirtimeText}>MTN</Text>
                         </View>
 

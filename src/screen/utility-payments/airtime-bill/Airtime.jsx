@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, TouchableOpacity, TextInput, Image, Button } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, ScrollView, TouchableOpacity, TextInput, Image, } from 'react-native'
 import React from 'react'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import {useState} from 'react';
-import ConfirmAirtime from './ConfirmAirtime';
+import ConfirmAirtime from '../../utility-payments/airtime-bill/ConfirmAirtime';
 import Modal from "react-native-modal";
 
 function Airtime({ navigation }) {
@@ -63,14 +63,14 @@ function Airtime({ navigation }) {
 
                     <TouchableOpacity onPress={() => handleNumberSelect('08108915688')}>
                         <View style={styles.ImageView}>
-                            <Image source={require('../../assets/MTN.png')} style={styles.LogoView} />
+                            <Image source={require('../../../../assets/MTN.png')} style={styles.LogoView} />
                         </View>
                         <Text style={{ justifyContent: 'center', alignSelf: 'center', color: 'white', fontFamily: 'gilroy-regular', fontSize: 11, marginLeft: 10, marginTop: 3 }}>08108915688</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity  onPress={() => handleNumberSelect('07015239994')}>
                         <View style={styles.ImageView1}>
-                            <Image source={require('../../assets/Airtel.jpg')} style={styles.LogoView1} />
+                            <Image source={require('../../../../assets/Airtel.jpg')} style={styles.LogoView1} />
                         </View>
                         <Text style={{ justifyContent: 'center', alignSelf: 'center', color: 'white', fontFamily: 'gilroy-regular', fontSize: 11, marginLeft: 35, marginTop: 3 }}>07015239994</Text>
 
@@ -79,7 +79,7 @@ function Airtime({ navigation }) {
 
                     <TouchableOpacity onPress={() => handleNumberSelect('09037625935')}>
                         <View style={styles.ImageView2}>
-                            <Image source={require('../../assets/MTN.png')} style={styles.LogoView} />
+                            <Image source={require('../../../../assets/MTN.png')} style={styles.LogoView} />
                         </View>
                         <Text style={{ justifyContent: 'center', alignSelf: 'center', color: 'white', fontFamily: 'gilroy-regular', fontSize: 11, marginLeft: 35, marginTop: 3 }}>09037625935</Text>
                     </TouchableOpacity>
@@ -151,7 +151,7 @@ function Airtime({ navigation }) {
                     <View style={{ marginTop: 10, backgroundColor: 'white', width: '100%', height: 110, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingHorizontal: 15 }}>
                         <View style={styles.BlockView}>
                             <View style={styles.LogoSize}>
-                                <Image source={require('../../assets/MTN.png')} style={styles.LogoView1} />
+                                <Image source={require('../../../../assets/MTN.png')} style={styles.LogoView1} />
                             </View>
                             <Text style={styles.InText}>MTN</Text>
 
@@ -159,7 +159,7 @@ function Airtime({ navigation }) {
 
                         <View style={styles.BlockView1}>
                             <View style={styles.LogoSize}>
-                                <Image source={require('../../assets/Airtel.jpg')} style={styles.LogoView1} />
+                                <Image source={require('../../../../assets/Airtel.jpg')} style={styles.LogoView1} />
                             </View>
                             <Text style={styles.InText}>Airtel</Text>
 
@@ -167,14 +167,14 @@ function Airtime({ navigation }) {
 
                         <View style={styles.BlockView2}>
                             <View style={styles.LogoSize}>
-                                <Image source={require('../../assets/Glo.jpg')} style={styles.LogoView1} />
+                                <Image source={require('../../../../assets/Glo.jpg')} style={styles.LogoView1} />
                             </View>
                             <Text style={styles.InText}>Glo</Text>
 
                         </View>
                         <View style={styles.BlockView3}>
                             <View style={styles.LogoSize}>
-                                <Image source={require('../../assets/9mobile.png')} style={styles.LogoView1} />
+                                <Image source={require('../../../../assets/9mobile.png')} style={styles.LogoView1} />
                             </View>
                             <Text style={styles.InText}>9mobile</Text>
                         </View>
