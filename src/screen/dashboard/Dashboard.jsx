@@ -4,8 +4,8 @@ import { AntDesign, Ionicons, Feather } from '@expo/vector-icons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Header from '../../screen/dashboard/Header'
 import Balancebox from '../../screen/dashboard/Balancebox';
-import Paymentbox2 from '../../screen/dashboard/Paymentbox2';
-import Paymentbox from '../../screen/dashboard/Paymentbox';
+import Paymentbox2 from './Services';
+import Paymentbox from './PaymentView';
 import Logo from '../../screen/dashboard/Logo'
 
 

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-function Paymentbox() {
+function PaymentView() {
   return (
     <View style={styles.OptionView}>
       <View style={styles.ListView}>
@@ -61,4 +61,4 @@ ScrollView: {
 
 })
 
-export default Paymentbox
+export default PaymentView

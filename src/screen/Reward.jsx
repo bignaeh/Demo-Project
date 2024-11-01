@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { StyleSheet, Text, View, ScrollView, SafeAreaView, TouchableOpacity, Modal, Image, FlatListComponent } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, SafeAreaView, TouchableOpacity, Modal, Image, } from 'react-native';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import {Entypo,SimpleLineIcons, FontAwesome6,MaterialIcons,EvilIcons} from '@expo/vector-icons/Entypo';
+import {Entypo,SimpleLineIcons, FontAwesome6,MaterialIcons,EvilIcons} from '@expo/vector-icons';
 
 
 
@@ -131,9 +131,9 @@ function Reward({ navigation }) {
                             <Text allowFontScaling={false} style={styles.CheckText}>rewards and voucher!</Text>
                         </View>
 
-                        <View style={styles.GetNowView}>
+                        <TouchableOpacity style={styles.GetNowView}>
                             <Text allowFontScaling={false} style={styles.GetNowText}>Get Now</Text>
-                        </View>
+                        </TouchableOpacity>
 
                     </View>
 
@@ -196,7 +196,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text style={styles.AirtimeText}>MTN Airtime</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text style={styles.percentText}>+2%</Text>
+                                    <Text style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -277,7 +277,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text style={styles.AirtimeText}>Airtel Airtime</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                    <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -354,7 +354,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text allowFontScaling={false} style={styles.AirtimeText}>Glo Airtime</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                    <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -373,6 +373,17 @@ function Reward({ navigation }) {
                         </View>
 
                     </View>
+
+
+
+                    
+
+
+                          
+                          
+                          {/* View all slide st the bottom */}
+
+
 
                     <Modal visible={modalSlide} animationType='slide'>
                         <SafeAreaView style={styles.Main1}>
@@ -435,7 +446,7 @@ function Reward({ navigation }) {
                                             <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                                 <Text allowFontScaling={false} style={styles.AirtimeText}>Glo Airtime</Text>
                                                 <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                                <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                                <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                             </View>
 
 
@@ -511,7 +522,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text allowFontScaling={false}style={styles.AirtimeText}>MTN Data</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                    <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -588,7 +599,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text allowFontScaling={false}style={styles.AirtimeText}>Airtel Data</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                    <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -665,7 +676,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text allowFontScaling={false}style={styles.AirtimeText}>Glo Data</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                    <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -742,7 +753,7 @@ function Reward({ navigation }) {
                                 <View style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 8 }}>
                                     <Text allowFontScaling={false}style={styles.AirtimeText}>9moblie Data</Text>
                                     <Image source={require('../../assets/Naira.png')} style={styles.nairalogo} />
-                                    <Text allowFontScaling={false} style={styles.percentText}>+2%</Text>
+                                    <Text allowFontScaling={false} style={styles.percentText}>+3%</Text>
                                 </View>
 
 
@@ -1091,15 +1102,6 @@ const styles = StyleSheet.create({
         
     }
 
-
-
-
-
-
-
-
-
 });
 
 export default Reward
-

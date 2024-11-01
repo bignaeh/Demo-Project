@@ -14,7 +14,12 @@ import { Feather, AntDesign,Ionicons,MaterialIcons } from '@expo/vector-icons';
 import Data from './src/screen/utility-payments/data-bill/Data';
 import Me from './src/screen/Me';
 import Dashboard from './src/screen/dashboard/Dashboard';
-import Paymentbox2 from './src/screen/dashboard/Paymentbox2';
+import Betting from './src/screen/utility-payments/betting/Betting'
+import Invest from './src/screen/utility-payments/invest/Invest';
+import Services from './src/screen/dashboard/Services';
+import Transport from './src/screen/utility-payments/transport/Transport';
+import BackendTest from './src/screen/BackendTest';
+
 
 
 
@@ -105,17 +110,20 @@ function App() {
 
   return (
 
- 
-    <NavigationContainer>
-      <Stack.Navigator >
-      <Stack.Screen options={{headerShown: false}} name="Tab" component={TabScreen}/>
-        <Stack.Screen options={{headerShown: false}} name="Onboarding" component={Onboarding}/>
-        <Stack.Screen options={{headerShown: false}} name="LoginScreen" component={LoginScreen}/>
-        <Stack.Screen options={{headerShown: false}} name="Dashboard" component={Dashboard}/>
-        <Stack.Screen options={{headerShown: false}} name="Airtime" component={Airtime}/>
-        <Stack.Screen options={{headerShown: false}} name="ConfirmAirtime" component={ConfirmAirtime}/>
-       </Stack.Navigator>
-     </NavigationContainer>
+ <BackendTest/>
+    // <NavigationContainer>
+    //   <Stack.Navigator >
+    //   <Stack.Screen options={{headerShown: false}} name="Tab" component={TabScreen}/>
+    //     <Stack.Screen options={{headerShown: false}} name="Onboarding" component={Onboarding}/>
+    //     <Stack.Screen options={{headerShown: false}} name="LoginScreen" component={LoginScreen}/>
+    //     <Stack.Screen options={{headerShown: false}} name="Dashboard" component={Dashboard}/>
+    //     <Stack.Screen options={{headerShown: false}} name="Airtime" component={Airtime}/>
+    //     <Stack.Screen options={{headerShown: false}} name="ConfirmAirtime" component={ConfirmAirtime}/>
+    //     <Stack.Screen options={{headerShown: false}} name="Invest" component={Invest}/>
+    //     <Stack.Screen options={{headerShown: false}} name="Transport" component={Transport}/>
+    //    </Stack.Navigator>
+      
+    //  </NavigationContainer>
   );
 }
 

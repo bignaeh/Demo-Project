@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
 
- function Paymentbox2() {
+ function Services() {
     const navigation = useNavigation();
     return (
         <View style={styles.OptionView1}>
@@ -17,12 +17,12 @@ import { useNavigation } from '@react-navigation/native';
                     <Text allowFontScaling={false} style={{ fontFamily: 'gilroy-regular', fontSize: 12 }}>Data</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate()}>
+                <TouchableOpacity onPress={() => navigation.navigate('Betting')}>
                     <Image source={require('../../../assets/Betting.png')} style={styles.ScrollView} />
                     <Text allowFontScaling={false}style={{ fontFamily: 'gilroy-regular', fontSize: 12 }}>Betting</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity onPress={() => navigation.navigate()}>
+                <TouchableOpacity onPress={() => navigation.navigate('Invest')}>
                     <Image source={require('../../../assets/Invest.png')} style={styles.ScrollView} />
                     <Text allowFontScaling={false} style={{ fontFamily: 'gilroy-regular', fontSize: 12 }}>Invest</Text>
 
@@ -101,4 +101,4 @@ const styles = StyleSheet.create({
 
 })
 
-export default Paymentbox2
+export default Services
